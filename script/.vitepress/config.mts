@@ -3,14 +3,17 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "开源青年文案归档站",
+  lastUpdated: true,
   description: "文章合为时而著，歌诗合为事而作",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '主页', link: '/' },
+      { text: '关于', link: '/about' }
     ],
-
+    search: {
+      provider: 'local'
+    },
     sidebar: [
       {
         text: '所有文案',
@@ -22,7 +25,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/izhouliren/kyqn.xyz' }
     ]
   }
 })
